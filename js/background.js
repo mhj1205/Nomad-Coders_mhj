@@ -1,9 +1,18 @@
-const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
+const body = document.querySelector("body");
+const img_number = 3;
 
-const nowImg = images[Math.floor(Math.random() * images.length)];
-const bgImg = document.createElement("img");
+function paintImage(imgNumber) {
+    const image = new Image();
+    body.style.backgroundImage = `url(img/${imgNumber}.jpg)`;
+}
 
-bgImg.src = `img/${nowImg}`;
+function genRandom() {
+    const number = Math.floor(Math.random() * img_number);
+    return number;
+}
 
-document.body.appendChild(bgImg);
-
+function init(){
+    const randomNumber = genRandom();
+    paintImage(randomNumber);
+}
+init();
