@@ -1,3 +1,75 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}   
+
+#header{
+    border: 5px solid red;
+    height: 100px;
+}
+
+#weather{
+    color: white;
+    float: right;
+    font-size: 20px;
+}
+
+#mid{
+    border: 5px solid yellow; 
+    
+}
+
+#login-form{
+    position: relative;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#clock{
+    text-align: center;
+    position: relative;
+    border: 5px solid orange; 
+    font-size: 140px;
+    color: white;
+    padding-top: 180px;
+
+}
+
+#greeting{
+    border: 5px solid pink; 
+    position: relative;
+    color: white;
+    font-size: 50px;
+    text-align: center; 
+    margin-top: -140px;
+}
+#todo-form{
+    text-align: center;
+}
+#todo-list{
+    border: 5px solid blue;
+    position: relative;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+}
+
+
+#bottom{
+    border: 5px solid green;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#quote{
+
+}
 .hidden{
     display: none;
 }
+
